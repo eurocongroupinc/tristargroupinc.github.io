@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristar Group Inc. | Global Manufacturing Partner</title>
+    <meta name="description" content="Tier-1 manufacturer specializing in Injection Moulding, PCB Assembly, and Metal Fabrication.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        h1, h2, h3, h4, .brand-font { font-family: 'Syne', sans-serif; }
+        .tech-font { font-family: 'Space Grotesk', sans-serif; }
+        .glass-nav { background: rgba(2, 6, 23, 0.7); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f172a; }
+        ::-webkit-scrollbar-thumb { background: #d97706; border-radius: 4px; }
+    </style>
+</head>
+
+<style>.shake { animation: shake 0.5s; } @keyframes shake { 0%, 100% { transform: translateX(0); } 25%, 75% { transform: translateX(-10px); } 50% { transform: translateX(10px); } }</style>
+<body class="bg-slate-950 flex items-center justify-center min-h-screen relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+    <div class="relative z-10 w-full max-w-md glass-card rounded-xl border border-slate-800 shadow-2xl p-10">
+        <div class="text-center mb-10">
+<svg version="1.1" viewBox="0 0 300 70" class="h-12 w-auto" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <g transform="translate(10, 10)">
+        <path fill="url(#goldGradient)" d="M25,0 L50,12.5 L50,37.5 L25,50 L0,37.5 L0,12.5 Z" />
+        <path fill="#ffffff" d="M18,18 H32 V22 H28 V32 H22 V22 H18 Z" />
+    </g>
+    <text x="70" y="42" font-family="'Syne', sans-serif" font-weight="800" font-size="32" fill="#ffffff" letter-spacing="-0.5">TRISTAR</text>
+    <text x="72" y="56" font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#94a3b8" letter-spacing="3" style="text-transform: uppercase;">Group Inc.</text>
+</svg>
+ <p class="text-slate-500 text-xs uppercase tracking-[0.3em] mt-4 font-bold">Secure Access</p></div>
+        <div id="errorMsg" class="hidden bg-red-900/30 border border-red-800 text-red-400 p-4 mb-6 text-sm rounded"><p class="font-bold">Access Denied</p><p>Invalid Credentials.</p></div>
+        <form id="loginForm" class="space-y-6">
+            <input type="text" class="w-full bg-slate-900/50 border border-slate-700 text-white p-3 rounded" placeholder="ID">
+            <input type="password" id="pass" class="w-full bg-slate-900/50 border border-slate-700 text-white p-3 rounded" placeholder="Password">
+            <button type="submit" id="submitBtn" class="w-full bg-amber-600 text-white font-bold py-4 rounded hover:bg-amber-500 transition">LOGIN</button>
+        </form>
+        <div class="mt-8 text-center"><a href="index.html" class="text-slate-600 text-xs hover:text-white transition">Back to Site</a></div>
+    </div>
+    <script>document.getElementById('loginForm').addEventListener('submit',function(e){e.preventDefault();const btn=document.getElementById('submitBtn');const card=document.querySelector('.glass-card');const orig=btn.innerHTML;btn.innerHTML='Verifying...';btn.classList.add('opacity-75');setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('opacity-75');document.getElementById('errorMsg').classList.remove('hidden');card.classList.add('shake');},1500);});</script>
+</body></html>
