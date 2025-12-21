@@ -67,7 +67,64 @@
             <p class="text-xl text-amber-500 font-light tracking-widest uppercase">Join Us</p>
         </div>
     </header>
-    <div class='py-20 text-center container mx-auto'><h2>Open Positions</h2></div>
+    <div class='py-20 text-center container mx-auto'><h2><section class="py-24 bg-slate-950">
+    <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-white mb-6 brand-font">Build the Future with Us</h2>
+            <p class="text-slate-400 leading-relaxed">
+                We are always looking for engineers, technicians, and visionaries who love to solve complex problems. At Tristar, you don't just work on machines; you push the boundaries of what's possible in manufacturing.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6 mb-24">
+            <div class="text-center p-6 border border-slate-800 rounded-lg bg-slate-900/50">
+                <i class="fas fa-heartbeat text-2xl text-amber-500 mb-4"></i>
+                <h4 class="text-white font-bold text-sm">Health Insurance</h4>
+            </div>
+            <div class="text-center p-6 border border-slate-800 rounded-lg bg-slate-900/50">
+                <i class="fas fa-bus text-2xl text-amber-500 mb-4"></i>
+                <h4 class="text-white font-bold text-sm">Transport Service</h4>
+            </div>
+             <div class="text-center p-6 border border-slate-800 rounded-lg bg-slate-900/50">
+                <i class="fas fa-utensils text-2xl text-amber-500 mb-4"></i>
+                <h4 class="text-white font-bold text-sm">Subsidized Meals</h4>
+            </div>
+             <div class="text-center p-6 border border-slate-800 rounded-lg bg-slate-900/50">
+                <i class="fas fa-chart-line text-2xl text-amber-500 mb-4"></i>
+                <h4 class="text-white font-bold text-sm">Skill Training</h4>
+            </div>
+        </div>
+
+        <div class="bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
+            <div class="p-6 border-b border-slate-800">
+                <h3 class="text-xl font-bold text-white">Current Openings</h3>
+            </div>
+            <div class="divide-y divide-slate-800">
+                <div class="p-6 flex flex-col md:flex-row justify-between items-center hover:bg-slate-800/50 transition">
+                    <div class="mb-4 md:mb-0">
+                        <h4 class="text-white font-bold text-lg">Senior Tool & Die Maker</h4>
+                        <p class="text-slate-500 text-sm mt-1"><i class="fas fa-map-marker-alt mr-2"></i> Vasai Unit &bull; Full Time</p>
+                    </div>
+                    <a href="mailto:hr@tristargroupinc.com" class="px-6 py-2 border border-slate-600 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition rounded">Apply Now</a>
+                </div>
+                 <div class="p-6 flex flex-col md:flex-row justify-between items-center hover:bg-slate-800/50 transition">
+                    <div class="mb-4 md:mb-0">
+                        <h4 class="text-white font-bold text-lg">Quality Assurance Engineer (PCB)</h4>
+                        <p class="text-slate-500 text-sm mt-1"><i class="fas fa-map-marker-alt mr-2"></i> Mumbai HQ &bull; Full Time</p>
+                    </div>
+                    <a href="mailto:hr@tristargroupinc.com" class="px-6 py-2 border border-slate-600 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition rounded">Apply Now</a>
+                </div>
+                 <div class="p-6 flex flex-col md:flex-row justify-between items-center hover:bg-slate-800/50 transition">
+                    <div class="mb-4 md:mb-0">
+                        <h4 class="text-white font-bold text-lg">Production Supervisor</h4>
+                        <p class="text-slate-500 text-sm mt-1"><i class="fas fa-map-marker-alt mr-2"></i> Vasai Unit &bull; Shift Based</p>
+                    </div>
+                    <a href="mailto:hr@tristargroupinc.com" class="px-6 py-2 border border-slate-600 text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition rounded">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section></h2></div>
     
 <footer class="bg-slate-950 text-slate-400 pt-32 pb-12 border-t border-slate-900 relative overflow-hidden">
     <div class="container mx-auto px-6 relative z-10">
@@ -115,4 +172,5 @@
         </div>
     </div>
 </footer>
+
 <script>AOS.init({ duration: 1000, once: true, offset: 50 }); const counters = document.querySelectorAll('.counter'); counters.forEach(counter => { const updateCount = () => { const target = +counter.getAttribute('data-target'); const count = +counter.innerText; const inc = target / 200; if (count < target) { counter.innerText = Math.ceil(count + inc); setTimeout(updateCount, 20); } else { counter.innerText = target; } }; updateCount(); });</script></body></html>
