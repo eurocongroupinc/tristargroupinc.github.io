@@ -67,7 +67,54 @@
             <p class="text-xl text-amber-500 font-light tracking-widest uppercase">Green Future</p>
         </div>
     </header>
-    <div class='py-20 text-center container mx-auto'><h2>Net Zero by 2040</h2></div>
+    <div class='py-20 text-center container mx-auto'><h2><section class="py-20 bg-slate-900 border-b border-slate-800">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-6 bg-slate-950 rounded-lg border border-slate-800">
+                <h3 class="text-4xl font-bold text-white mb-2 brand-font text-green-500">40%</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest">Energy from Solar</p>
+            </div>
+            <div class="p-6 bg-slate-950 rounded-lg border border-slate-800">
+                <h3 class="text-4xl font-bold text-white mb-2 brand-font text-blue-500">100%</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest">Water Recycled</p>
+            </div>
+            <div class="p-6 bg-slate-950 rounded-lg border border-slate-800">
+                <h3 class="text-4xl font-bold text-white mb-2 brand-font text-amber-500">0</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest">Conflict Minerals</p>
+            </div>
+             <div class="p-6 bg-slate-950 rounded-lg border border-slate-800">
+                <h3 class="text-4xl font-bold text-white mb-2 brand-font text-white">ISO</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-widest">14001 Certified</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-slate-950">
+    <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="glass-card p-10 rounded-2xl" data-aos="fade-up">
+                <i class="fas fa-solar-panel text-4xl text-green-500 mb-6"></i>
+                <h3 class="text-2xl font-bold text-white mb-4">Green Energy Transition</h3>
+                <p class="text-slate-400 leading-relaxed">
+                    We have installed 500kW rooftop solar panels across our Vasai unit, significantly reducing our dependency on the grid. Our goal is to source 75% of our energy from renewables by 2030.
+                </p>
+            </div>
+            <div class="glass-card p-10 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-recycle text-4xl text-blue-500 mb-6"></i>
+                <h3 class="text-2xl font-bold text-white mb-4">Circular Economy</h3>
+                <p class="text-slate-400 leading-relaxed">
+                    Our sprue recycling program ensures that 98% of plastic waste generated during the injection moulding process is reground and reused for non-critical components or sold to authorized recyclers.
+                </p>
+            </div>
+        </div>
+        
+        <div class="mt-20 text-center max-w-2xl mx-auto">
+            <h2 class="text-2xl font-bold text-white mb-6">RoHS & REACH Compliant</h2>
+            <p class="text-slate-400">We strictly adhere to international environmental directives. All materials sourced by Tristar Group are lead-free and free from hazardous substances.</p>
+        </div>
+    </div>
+</section></h2></div>
     
 <footer class="bg-slate-950 text-slate-400 pt-32 pb-12 border-t border-slate-900 relative overflow-hidden">
     <div class="container mx-auto px-6 relative z-10">
@@ -115,4 +162,5 @@
         </div>
     </div>
 </footer>
+
 <script>AOS.init({ duration: 1000, once: true, offset: 50 }); const counters = document.querySelectorAll('.counter'); counters.forEach(counter => { const updateCount = () => { const target = +counter.getAttribute('data-target'); const count = +counter.innerText; const inc = target / 200; if (count < target) { counter.innerText = Math.ceil(count + inc); setTimeout(updateCount, 20); } else { counter.innerText = target; } }; updateCount(); });</script></body></html>
