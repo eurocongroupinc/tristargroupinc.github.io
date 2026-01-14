@@ -38,7 +38,7 @@
         <path fill="#ffffff" d="M18,18 H32 V22 H28 V32 H22 V22 H18 Z" />
     </g>
     <text x="70" y="42" font-family="'Syne', sans-serif" font-weight="800" font-size="32" fill="#ffffff" letter-spacing="-0.5">TRISTAR</text>
-    <text x="72" y="56" font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#94a3b8" letter-spacing="3" style="text-transform: uppercase;">Group Inc.</text>
+    <text x="72" y="56" font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#94a3b8" letter-spacing="3" style="text-transform: uppercase;"></text>
 </svg>
  <p class="text-slate-500 text-xs uppercase tracking-[0.3em] mt-4 font-bold">Secure Access</p></div>
         <div id="errorMsg" class="hidden bg-red-900/30 border border-red-800 text-red-400 p-4 mb-6 text-sm rounded"><p class="font-bold">Access Denied</p><p>Invalid Credentials.</p></div>
@@ -50,4 +50,5 @@
         <div class="mt-8 text-center"><a href="index.html" class="text-slate-600 text-xs hover:text-white transition">Back to Site</a></div>
     </div>
     <script>document.getElementById('loginForm').addEventListener('submit',function(e){e.preventDefault();const btn=document.getElementById('submitBtn');const card=document.querySelector('.glass-card');const orig=btn.innerHTML;btn.innerHTML='Verifying...';btn.classList.add('opacity-75');setTimeout(()=>{btn.innerHTML=orig;btn.classList.remove('opacity-75');document.getElementById('errorMsg').classList.remove('hidden');card.classList.add('shake');},1500);});</script>
+
 </body></html>
