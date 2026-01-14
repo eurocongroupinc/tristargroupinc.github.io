@@ -36,7 +36,7 @@
         <path fill="#ffffff" d="M18,18 H32 V22 H28 V32 H22 V22 H18 Z" />
     </g>
     <text x="70" y="42" font-family="'Syne', sans-serif" font-weight="800" font-size="32" fill="#ffffff" letter-spacing="-0.5">TRISTAR</text>
-    <text x="72" y="56" font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#94a3b8" letter-spacing="3" style="text-transform: uppercase;">Group Inc.</text>
+    <text x="72" y="56" font-family="'Inter', sans-serif" font-weight="500" font-size="9" fill="#94a3b8" letter-spacing="3" style="text-transform: uppercase;"></text>
 </svg>
 </a>
         <div class="hidden lg:flex space-x-12 items-center">
@@ -157,4 +157,5 @@
 </footer>
 
 <script>AOS.init({ duration: 1000, once: true, offset: 50 }); const counters = document.querySelectorAll('.counter'); counters.forEach(counter => { const updateCount = () => { const target = +counter.getAttribute('data-target'); const count = +counter.innerText; const inc = target / 200; if (count < target) { counter.innerText = Math.ceil(count + inc); setTimeout(updateCount, 20); } else { counter.innerText = target; } }; updateCount(); });</script></body></html>
+
 
